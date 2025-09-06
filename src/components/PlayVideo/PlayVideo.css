@@ -1,0 +1,164 @@
+.play-video {
+    /* document */
+    /* difference between flex and flex basis */
+    flex-basis: 69%;
+}
+
+.play-video iframe {
+    width: 100%;
+    /* document */
+    height: 37vw ;
+}
+
+.play-video h3 {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.play-video-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* document */
+    flex-wrap: wrap;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+.play-video-info span {
+    /* document */
+    /* texts and images are inline */
+    display: inline-flex;
+    align-items: center;
+    margin-left: 15px;
+}
+.play-video-info img {
+    width: 20px;
+    margin-right: 8px;
+}
+.play-video hr {
+    /* at first it is shown because of it's border but after this codes will be because of height and color */
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 10px 0;
+}
+
+.publisher {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.publisher div {
+    flex: 1;
+    line-height: 18px;
+}
+.publisher img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.publisher div p {
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+}
+.publisher div span {
+    font-size: 13px;
+    color: #5a5a5a;
+}
+.publisher button {
+    background-color: red;
+    color: white;
+    padding: 8px 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.vid-description {
+    padding-left: 55px;
+    margin: 15px 0;
+}
+.vid-description p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #5a5a5a;
+}
+.vid-description h4 {
+    font-size: 14px;
+    color: #5a5a5a;
+    margin-top: 15px;
+}
+
+.vid-description .comment {
+    display: flex;
+    /* vertical */
+    align-items: flex-start;
+    margin: 20px 0;
+}
+.vid-description .comment img {
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.vid-description .comment h3 {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.vid-description .comment h3 span {
+    font-size: 12px;
+    color: #5a5a5a;
+    font-weight: 500;
+    margin-left: 8px;
+}
+.comment .comment-action {
+    display: flex;
+    align-items: center;
+    margin: 8px 0px;
+    font-size: 14px;
+}
+.comment .comment-action img {
+    border-radius: 0;
+    width: 20px;
+    margin-right: 5px;
+}
+.comment .comment-action span {
+    /* so they get further from each other */
+    margin-right: 20px;
+    color: #5a5a5a;
+}
+
+
+@media screen and (max-width : 1000px) {
+    .play-video {
+        /* without needing to turn to column flex */
+        flex-basis: 100%;
+    }
+    .play-video iframe {
+        width: 100%;
+        height: 50vw;
+    }
+    .vid-description {
+        padding-left:0 ;
+    }
+    .play-video .play-video-info span {
+        margin-left: 0;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width : 500px) {
+    .play-video iframe {
+        width: 100%;
+        height: 50vw;
+        padding: 0px 10px;
+    }
+    .play-video h3 {
+        font-size: 16px;
+    }
+}

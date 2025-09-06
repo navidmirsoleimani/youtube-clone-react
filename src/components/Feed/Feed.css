@@ -1,0 +1,31 @@
+.feed {
+    /* if you set the display grid , no matter how long the texts are the card sizes will be equal */
+    display: grid;
+    /* document , super important*/
+    /* auto fit becuase it wouldn't be scrolable */
+    grid-template-columns: repeat(auto-fit , minmax(250px , 1fr));
+    grid-column-gap: 16px;
+    grid-row-gap: 30px;
+    margin-top: 15px;
+}
+
+.card img {
+    /* super important , check it , the card's width is determined by the description sec instead of image's width after this line */
+    width: 100%;
+    border-radius: 5px;
+}
+.card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    margin: 5px 0px;
+}
+.card h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin: 6px 0px;
+}
+.card p {
+    font-size: 14px;
+}
